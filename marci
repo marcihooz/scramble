@@ -1,0 +1,21 @@
+#include <iostream>
+
+using namespace std;
+string fordit(string a)
+{
+    string result=a;
+    int j=0;
+    for(int i=a.size()-1;i>=0;i--)
+    {
+
+        if(i!=a.size()-1&&i!=0) result[j]=a[i];
+        j++;
+    }
+
+    return result;
+}
+int main()
+{
+    cout << fordit("Hello world!") << endl;
+    return 0;
+}
